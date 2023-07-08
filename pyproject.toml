@@ -2,12 +2,18 @@
 name = "minimal-python-project-boilerplate"
 version = "0.1.0"
 description = ""
-authors = ["yukiyan <wakayama0215@gmail.com>"]
+authors = ["yukiyan <wakayama0215@gmail.com>", "byungwook-kang <lesimor@naver.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = ">=3.8.1,<4.0"
 
 [tool.poetry.dev-dependencies]
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+isort = "^5.12.0"
+flake8 = "^6.0.0"
+nox = "^2023.4.22"
 
 [build-system]
 requires = ["poetry>=0.12"]
